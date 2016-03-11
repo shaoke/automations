@@ -5,7 +5,6 @@ import datetime
 import socket
 import fcntl
 import struct
-import socket
 import threading
 
 # Change to your own account information
@@ -72,6 +71,6 @@ def checkWhetherOnline():
     print 'online'
   else:
     print 'offline'
-    threading.Timer(1, checkWhetherOnline).start()
+    threading.Timer(60, checkWhetherOnline).start()
 
 checkWhetherOnline()
