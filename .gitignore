@@ -116,3 +116,6 @@ node_modules
 
 # editor
 .idea
+
+# 
+spf13-vim.sh
